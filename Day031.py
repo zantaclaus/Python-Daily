@@ -1,9 +1,9 @@
 from pathlib import Path
 path = Path("Day031.txt")
 
-num = int(input())
+num = int(input("Enter num 1 or 2 or 3 : "))
 if num == 1:
-    print(path.read_text())
+    print(path.read_text('utf-8'))
 elif num == 2:
     text = input("Write to Text: ")
     text = "".join([letter for letter in text.split()])
